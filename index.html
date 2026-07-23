@@ -7,7 +7,7 @@
 <meta name="description" content="ОСКАР — экспертный центр пренатальной диагностики на базе МГЦ «Геномед». Экспертные УЗИ по стандартам FMF, скрининги, НИПТ, генетик и инвазивная диагностика — за один визит. Персональный календарь беременности, калькулятор ПДР и динамики ХГЧ.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   /* пастельная, приглушённая палитра */
@@ -19,7 +19,7 @@
   --coral:#F0A88F; --coral-ink:#DB7B60; --coral-soft:#FBE7DD;
   --gold:#E6C48C; --gold-ink:#B98A3E; --gold-soft:#F7EED9;
   --green:#7FB79E; --green-ink:#4E9077; --green-soft:#E6F1EB;
-  --f:'Andika',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --f:'Charis SIL',Georgia,'Times New Roman',serif;
   --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
   --shell:1200px;
   --sh-sm:0 1px 2px rgba(65,80,74,.05),0 6px 18px rgba(65,80,74,.05);
@@ -36,14 +36,14 @@ img,svg,video{max-width:100%;display:block} a{color:inherit;text-decoration:none
 .shell{max-width:var(--shell);margin-inline:auto;padding-inline:clamp(20px,5vw,56px)}
 .mono{font-family:var(--mono);font-feature-settings:"tnum"1,"zero"1;letter-spacing:-.01em}
 
-h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:-.01em;line-height:1.12}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:0;line-height:1.12}
 .kicker{font-family:var(--mono);font-size:clamp(11px,.95vw,12.5px);font-weight:600;letter-spacing:.14em;
   text-transform:uppercase;color:var(--teal-deep);display:inline-flex;align-items:center;gap:11px}
 .kicker::before{content:"";width:24px;height:1.5px;background:var(--teal);display:inline-block}
 .kicker.c-coral{color:var(--coral-ink)}.kicker.c-coral::before{background:var(--coral)}
 .kicker.c-light{color:var(--mint)}.kicker.c-light::before{background:var(--mint)}
-.h1{font-size:clamp(2.1rem,4.3vw,3.6rem);line-height:1.06;letter-spacing:-.02em;font-weight:700}
-.h2{font-size:clamp(1.7rem,3.4vw,2.9rem);line-height:1.1;letter-spacing:-.015em;font-weight:700}
+.h1{font-size:clamp(2.1rem,4.3vw,3.6rem);line-height:1.06;letter-spacing:0;font-weight:700}
+.h2{font-size:clamp(1.7rem,3.4vw,2.9rem);line-height:1.1;letter-spacing:0;font-weight:700}
 .h3{font-size:clamp(1.15rem,1.7vw,1.45rem);font-weight:700}
 .lead{font-size:clamp(1rem,1.35vw,1.18rem);color:var(--ink-2);line-height:1.55;font-weight:500}
 em{font-style:normal;color:var(--teal-deep)} .coral-t{color:var(--coral-ink)} .muted{color:var(--muted)}
@@ -101,7 +101,7 @@ header:not(.solid) .menu a:hover{color:#fff}
 
 /* pull-quote */
 .quote{text-align:center;padding-block:clamp(3.5rem,9vh,7rem);background:var(--cream)}
-.quote .q{font-size:clamp(1.9rem,5vw,4rem);line-height:1.08;letter-spacing:-.02em;font-weight:700;max-width:18ch;margin-inline:auto}
+.quote .q{font-size:clamp(1.9rem,5vw,4rem);line-height:1.08;letter-spacing:0;font-weight:700;max-width:18ch;margin-inline:auto}
 .quote .sub{max-width:50ch;margin:1.6rem auto 0;color:var(--ink-2)}
 .quote .qm{color:var(--coral);font-size:clamp(2.4rem,6vw,4rem);line-height:0;height:.4em;display:block}
 
@@ -120,7 +120,7 @@ header:not(.solid) .menu a:hover{color:#fff}
 /* soft reassure band (замена «9 из 10») */
 .reband{background:linear-gradient(150deg,var(--mint-soft),var(--cream-3));border-block:1px solid var(--hair-soft)}
 .reband__in{max-width:940px;text-align:center;margin-inline:auto}
-.reband .big{font-size:clamp(1.9rem,4.4vw,3.4rem);line-height:1.1;font-weight:700;letter-spacing:-.02em;max-width:20ch;margin:1.2rem auto 0}
+.reband .big{font-size:clamp(1.9rem,4.4vw,3.4rem);line-height:1.1;font-weight:700;letter-spacing:0;max-width:20ch;margin:1.2rem auto 0}
 .reband p{color:var(--ink-2);max-width:56ch;margin:1.4rem auto 0}
 .reband .pills{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-top:1.8rem}
 .reband .pill{background:#fff;border:1px solid var(--hair-soft);border-radius:100px;padding:9px 16px;font-weight:600;font-size:.86rem;box-shadow:var(--sh-sm)}
@@ -175,7 +175,7 @@ header:not(.solid) .menu a:hover{color:#fff}
 .svc:hover{background:linear-gradient(90deg,var(--mint-soft),transparent 68%)}
 .svc:hover .row{padding-inline:clamp(.4rem,1.6vw,1.2rem)}
 .svc .idx{font-family:var(--mono);font-size:.82rem;color:var(--teal-deep);font-weight:700;align-self:start;padding-top:.5rem}
-.svc .title{font-size:clamp(1.3rem,2.9vw,2.1rem);font-weight:700;letter-spacing:-.015em;line-height:1.08}
+.svc .title{font-size:clamp(1.3rem,2.9vw,2.1rem);font-weight:700;letter-spacing:0;line-height:1.08}
 .svc .desc{color:var(--ink-2);font-size:.95rem;margin:.5rem 0 0;max-width:54ch}
 .svc .when{font-family:var(--mono);font-size:.76rem;color:var(--teal-deep);margin-top:.5rem}
 .svc .when b{color:var(--muted)}
@@ -945,7 +945,7 @@ footer .col a{display:block;margin-bottom:.55rem;color:#BAC7C1}footer a:hover{co
   function drawChart(p){
     var W=640,H=300,pl=52,pr=18,pt=18,pb=34;
     while(hcgChart.firstChild)hcgChart.removeChild(hcgChart.firstChild);
-    if(p.length===0){var ph=svgEl('text',{x:W/2,y:H/2,fill:C.muted,'font-size':14,'text-anchor':'middle','font-family':'Andika, sans-serif'});ph.textContent='График появится после ввода значений';hcgChart.appendChild(ph);return;}
+    if(p.length===0){var ph=svgEl('text',{x:W/2,y:H/2,fill:C.muted,'font-size':14,'text-anchor':'middle','font-family':'Charis SIL, serif'});ph.textContent='График появится после ввода значений';hcgChart.appendChild(ph);return;}
     var t0=p[0].t,maxDay=Math.max(1,(p[p.length-1].t-t0)/DAY),vmax=0,vmin=Infinity;
     p.forEach(function(q){vmax=Math.max(vmax,q.v);vmin=Math.min(vmin,q.v);});
     var expHi=expDbl(p[0].v).hi,guideEnd=p[0].v*Math.pow(2,(maxDay*24)/expHi);vmax=Math.max(vmax,guideEnd);
@@ -957,11 +957,11 @@ footer .col a{display:block;margin-bottom:.55rem;color:#BAC7C1}footer a:hover{co
     var zone='M'+guide.map(function(q){return q[0]+','+q[1];}).join(' L ');zone+=' L '+gx(maxDay)+','+pt+' L '+gx(0)+','+pt+' Z';
     hcgChart.appendChild(svgEl('path',{d:zone,fill:C.mint,'fill-opacity':0.16}));
     hcgChart.appendChild(svgEl('path',{d:'M'+guide.map(function(q){return q[0]+','+q[1];}).join(' L '),fill:'none',stroke:C.teal,'stroke-width':1.5,'stroke-dasharray':'4 4','stroke-opacity':0.5}));
-    var bl=svgEl('text',{x:gx(maxDay/2),y:pt+14,fill:C.teal,'font-size':10.5,'text-anchor':'middle','font-family':'Andika, sans-serif','font-weight':700,'fill-opacity':.72});bl.textContent='ориентир динамики';hcgChart.appendChild(bl);
+    var bl=svgEl('text',{x:gx(maxDay/2),y:pt+14,fill:C.teal,'font-size':10.5,'text-anchor':'middle','font-family':'Charis SIL, serif','font-weight':700,'fill-opacity':.72});bl.textContent='ориентир динамики';hcgChart.appendChild(bl);
     hcgChart.appendChild(svgEl('path',{d:p.map(function(q,i){var day=(q.t-t0)/DAY;return (i?'L':'M')+gx(day)+','+gy(q.v);}).join(' '),fill:'none',stroke:C.teal,'stroke-width':2.5,'stroke-linejoin':'round','stroke-linecap':'round'}));
     p.forEach(function(q){var day=(q.t-t0)/DAY,x=gx(day),y=gy(q.v);hcgChart.appendChild(svgEl('circle',{cx:x,cy:y,r:5,fill:'#fff',stroke:C.teal,'stroke-width':2.5}));var vt=svgEl('text',{x:x,y:y-11,fill:C.ink,'font-size':11,'text-anchor':'middle','font-weight':700,'font-family':"'JetBrains Mono', monospace"});vt.textContent=q.v>=1000?Math.round(q.v/100)/10+'k':q.v;hcgChart.appendChild(vt);});
     var ticks=maxDay<=6?1:(maxDay<=14?2:Math.ceil(maxDay/7));for(var dd=0;dd<=maxDay+1e-9;dd+=ticks){var xt=svgEl('text',{x:gx(dd),y:H-12,fill:C.muted,'font-size':11,'text-anchor':'middle','font-family':"'JetBrains Mono', monospace"});xt.textContent='+'+Math.round(dd)+'д';hcgChart.appendChild(xt);}
-    var cap=svgEl('text',{x:pl-46,y:pt+2,fill:C.muted,'font-size':10,'font-family':'Andika, sans-serif'});cap.textContent='мЕд/мл';hcgChart.appendChild(cap);
+    var cap=svgEl('text',{x:pl-46,y:pt+2,fill:C.muted,'font-size':10,'font-family':'Charis SIL, serif'});cap.textContent='мЕд/мл';hcgChart.appendChild(cap);
   }
   addRow();addRow();computeHcg();
 })();
